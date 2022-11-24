@@ -2,7 +2,7 @@
 
 # What is no-charles ?
 
-It can enable you to modify http requests in browser like Charles dose in OS.
+It enables you to modify http requests in browser like Charles dose in OS.
 
 # How dose it work ?
 
