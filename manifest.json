@@ -1,0 +1,24 @@
+{
+  "name": "no-charles",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": ["dist/content-script.js"],
+      "matches":["<all_urls>"]
+    }
+  ],
+  "web_accessible_resources": [
+   {
+    "resources": [  "dist/inject.js"],
+    "matches": [ "<all_urls>" ]
+   }
+  ]
+}
